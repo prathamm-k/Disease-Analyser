@@ -1,0 +1,77 @@
+2025-06-19 20:37:01,768 - INFO - Script started
+2025-06-19 20:37:01,768 - INFO - Loading datasets...
+2025-06-19 20:37:01,840 - INFO - Datasets loaded successfully
+2025-06-19 20:37:01,840 - INFO - Preprocessing data...
+2025-06-19 20:37:01,843 - WARNING - Found missing prognosis values; replacing with -1
+2025-06-19 20:37:01,850 - WARNING - Found missing prognosis values; replacing with -1
+2025-06-19 20:37:01,857 - INFO - Data preprocessed: 132 features, 4440 training samples, 37 test samples
+2025-06-19 20:37:01,858 - INFO - Training Random Forest Classifier...
+2025-06-19 20:37:02,634 - INFO - Evaluating model...
+2025-06-19 20:37:02,721 - INFO - Model Performance: Accuracy = 1.0000
+2025-06-19 20:37:02,724 - ERROR - Error training model: Number of classes, 37, does not match size of target_names, 41. Try specifying the labels parameter
+2025-06-19 20:37:02,724 - ERROR - Main execution failed: Number of classes, 37, does not match size of target_names, 41. Try specifying the labels parameter
+2025-06-19 20:38:42,035 - INFO - Script started
+2025-06-19 20:38:42,035 - INFO - Loading datasets...
+2025-06-19 20:38:42,122 - INFO - Datasets loaded successfully
+2025-06-19 20:38:42,122 - INFO - Generating disease list from data...
+2025-06-19 20:38:42,126 - INFO - Found 41 unique diseases: ['(vertigo) paroymsal  positional vertigo', 'acne', 'aids', 'alcoholic hepatitis', 'allergy', 'arthritis', 'bronchial asthma', 'cervical spondylosis', 'chicken pox', 'chronic cholestasis', 'common cold', 'dengue', 'diabetes ', 'dimorphic hemmorhoids(piles)', 'drug reaction', 'fungal infection', 'gastroenteritis', 'gerd', 'heart attack', 'hepatitis a', 'hepatitis b', 'hepatitis c', 'hepatitis d', 'hepatitis e', 'hypertension ', 'hyperthyroidism', 'hypoglycemia', 'hypothyroidism', 'impetigo', 'jaundice', 'malaria', 'migraine', 'osteoarthristis', 'paralysis (brain hemorrhage)', 'peptic ulcer diseae', 'pneumonia', 'psoriasis', 'tuberculosis', 'typhoid', 'urinary tract infection', 'varicose veins']
+2025-06-19 20:38:42,127 - INFO - Preprocessing data...
+2025-06-19 20:38:42,152 - INFO - Data preprocessed: 132 features, 4920 training samples, 41 test samples
+2025-06-19 20:38:42,153 - INFO - Training Random Forest Classifier...
+2025-06-19 20:38:42,153 - INFO - Performing 5-fold cross-validation...
+2025-06-19 20:38:46,871 - INFO - Cross-Validation Accuracy: 1.0000 ± 0.0000
+2025-06-19 20:38:47,650 - INFO - Evaluating model on test set...
+2025-06-19 20:38:47,735 - INFO - Test Set Accuracy: 1.0000
+2025-06-19 20:38:47,758 - INFO - 
+Classification Report:
+                                         precision    recall  f1-score   support
+
+(vertigo) paroymsal  positional vertigo       1.00      1.00      1.00         1
+                                   acne       1.00      1.00      1.00         1
+                                   aids       1.00      1.00      1.00         1
+                    alcoholic hepatitis       1.00      1.00      1.00         1
+                                allergy       1.00      1.00      1.00         1
+                              arthritis       1.00      1.00      1.00         1
+                       bronchial asthma       1.00      1.00      1.00         1
+                   cervical spondylosis       1.00      1.00      1.00         1
+                            chicken pox       1.00      1.00      1.00         1
+                    chronic cholestasis       1.00      1.00      1.00         1
+                            common cold       1.00      1.00      1.00         1
+                                 dengue       1.00      1.00      1.00         1
+                              diabetes        1.00      1.00      1.00         1
+           dimorphic hemmorhoids(piles)       1.00      1.00      1.00         1
+                          drug reaction       1.00      1.00      1.00         1
+                       fungal infection       1.00      1.00      1.00         1
+                        gastroenteritis       1.00      1.00      1.00         1
+                                   gerd       1.00      1.00      1.00         1
+                           heart attack       1.00      1.00      1.00         1
+                            hepatitis a       1.00      1.00      1.00         1
+                            hepatitis b       1.00      1.00      1.00         1
+                            hepatitis c       1.00      1.00      1.00         1
+                            hepatitis d       1.00      1.00      1.00         1
+                            hepatitis e       1.00      1.00      1.00         1
+                          hypertension        1.00      1.00      1.00         1
+                        hyperthyroidism       1.00      1.00      1.00         1
+                           hypoglycemia       1.00      1.00      1.00         1
+                         hypothyroidism       1.00      1.00      1.00         1
+                               impetigo       1.00      1.00      1.00         1
+                               jaundice       1.00      1.00      1.00         1
+                                malaria       1.00      1.00      1.00         1
+                               migraine       1.00      1.00      1.00         1
+                        osteoarthristis       1.00      1.00      1.00         1
+           paralysis (brain hemorrhage)       1.00      1.00      1.00         1
+                    peptic ulcer diseae       1.00      1.00      1.00         1
+                              pneumonia       1.00      1.00      1.00         1
+                              psoriasis       1.00      1.00      1.00         1
+                           tuberculosis       1.00      1.00      1.00         1
+                                typhoid       1.00      1.00      1.00         1
+                urinary tract infection       1.00      1.00      1.00         1
+                         varicose veins       1.00      1.00      1.00         1
+
+                               accuracy                           1.00        41
+                              macro avg       1.00      1.00      1.00        41
+                           weighted avg       1.00      1.00      1.00        41
+
+2025-06-19 20:38:47,758 - INFO - Saving model and artifacts...
+2025-06-19 20:38:47,936 - INFO - Artifacts saved successfully to /home/pratham/Projects/Disease-Analyser/train_model/models
+2025-06-19 20:38:47,936 - INFO - Training completed successfully
